@@ -1,0 +1,17 @@
+version : '3'
+services: 
+  stunnel:
+    build:
+      dockerfile : Dockerfile
+      context: 'Stunnel/'
+    restart: always
+    ports:
+      - '443:443'
+  socks:
+    build: 
+      dockerfile: Dockerfile
+      context: '3Proxy'
+    restart: always
+    # admin WebGUI
+    # ports:
+    #   - '8000:8000'
