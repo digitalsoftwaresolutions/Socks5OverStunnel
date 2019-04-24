@@ -3,7 +3,7 @@ services:
   stunnel:
     build:
       dockerfile : Dockerfile
-      context: 'Stunnel/'
+      context: 'Stunnel'
     restart: always
     ports:
       - '443:443'
