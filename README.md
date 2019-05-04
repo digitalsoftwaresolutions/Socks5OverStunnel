@@ -1,5 +1,5 @@
 # Socks5OverStunnel
-Dante Over Stunnel (Docker)
+3Proxy Over Stunnel (Docker)
 
 # CAUTION 
 generate your own PEM file with 
