@@ -8,10 +8,8 @@ services:
     ports:
       - '443:443'
   socks:
-    build: 
-      dockerfile: Dockerfile
-      context: '3Proxy'
+    build:
+      dockerfile : Dockerfile
+      context: 'Dante'
     restart: always
-    # admin WebGUI
-    # ports:
-    #   - '8000:8000'
+
