@@ -1,5 +1,5 @@
 version : '3'
-services: 
+services:
   stunnel:
     build:
       dockerfile : Dockerfile
@@ -7,9 +7,16 @@ services:
     restart: always
     ports:
       - '443:443'
+    ulimits:
+      nofile:
+        soft: 1024000
+        hard: 1024000
   socks:
     build:
       dockerfile : Dockerfile
       context: 'Dante'
     restart: always
-
+    ulimits:
+      nofile:
+        soft: 1024000
+        hard: 1024000
